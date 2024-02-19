@@ -56,7 +56,7 @@ async function fetchUsingAsyncAwait(){
 //fetchUsingAsyncAwait();
 
 function helperMethod(method,url){
-  const promise=new promise((resolve,reject)=>{
+  const promise=new Promise((resolve,reject)=>{
         const xhr=new XMLHttpRequest();
         xhr.open(method,url);
         xhr.responseType="json";
